@@ -1,5 +1,7 @@
 # Stopwatch
 
+## Example
+
 ```cpp
 #include "Stopwatch.hpp"
 
@@ -35,4 +37,18 @@ int main() {
     stopwatch.stop();
     std::printf("stopwatch.total() = %lf ms\n", stopwatch.total());
 }
+```
+
+## Output
+
+```shell
+void f(int)
+stopwatch.total() = 1000.089782 ms
+void f(int)
+stopwatch.total() = 3000.150913 ms
+void f(int)
+stopwatch.total() = 6000.231520 ms
+stopwatch.restart()
+void f(int)
+stopwatch.total() = 1000.075934 ms
 ```
