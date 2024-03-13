@@ -41,7 +41,7 @@ int main() {
 
 ## Output
 
-```shell
+```console
 void f(int)
 stopwatch.total() = 1000.089782 ms
 void f(int)
