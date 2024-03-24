@@ -8,16 +8,12 @@ public:
                   mTimePoint1(std::chrono::high_resolution_clock::now()),
                   mTotal(std::chrono::duration<double, std::milli>::zero()) {}
 
-    static std::chrono::time_point<std::chrono::high_resolution_clock> now() {
-        return std::chrono::high_resolution_clock::now();
-    }
-
     void start() {
-        mTimePoint0 = now();
+        mTimePoint0 = std::chrono::high_resolution_clock::now();
     }
 
     void stop() {
-        mTimePoint1 = now();
+        mTimePoint1 = std::chrono::high_resolution_clock::now();
         mTotal += mTimePoint1 - mTimePoint0;
     }
 
