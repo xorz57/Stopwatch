@@ -19,23 +19,26 @@ int main() {
     stopwatch.start();
     f(1);
     stopwatch.stop();
-    std::printf("stopwatch.total() = %lf ms\n", stopwatch.total());
+
+    std::printf("stopwatch.total() = %lf ms\n", stopwatch.total()); // Not measured
 
     stopwatch.start();
     f(2);
     stopwatch.stop();
-    std::printf("stopwatch.total() = %lf ms\n", stopwatch.total());
+
+    std::printf("stopwatch.total() = %lf ms\n", stopwatch.total()); // Not measured
 
     stopwatch.start();
     f(3);
     stopwatch.stop();
-    std::printf("stopwatch.total() = %lf ms\n", stopwatch.total());
 
-    std::printf("stopwatch.restart()\n");
+    std::printf("stopwatch.total() = %lf ms\n", stopwatch.total()); // Not measured
+
     stopwatch.restart();
     f(1);
     stopwatch.stop();
-    std::printf("stopwatch.total() = %lf ms\n", stopwatch.total());
+
+    std::printf("stopwatch.total() = %lf ms\n", stopwatch.total()); // Not measured
 }
 ```
 
