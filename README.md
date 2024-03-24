@@ -51,7 +51,6 @@ void f(int)
 stopwatch.total() = 3000.150913 ms
 void f(int)
 stopwatch.total() = 6000.231520 ms
-stopwatch.restart()
 void f(int)
 stopwatch.total() = 1000.075934 ms
 ```
